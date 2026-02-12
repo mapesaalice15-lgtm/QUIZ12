@@ -244,7 +244,7 @@ function loadQuestion() {
     document.getElementById("submitBtn").style.display = "block";
     document.getElementById("nextBtn").style.display = "none";
     const q = quiz[index];
-    document.getElementById("qCount").textContent = `ANALYSIS SPECIMEN ${index+1}/${quiz.length}`;
+    document.getElementById("qCount").textContent = `QUESTION ${index+1}/${quiz.length}`;
     document.getElementById("questionText").textContent = q.q;
     const grid = document.getElementById("optionsGrid");
     grid.innerHTML = "";
@@ -325,3 +325,4 @@ function finishQuiz() {
 </body>
 
 </html>
+
