@@ -84,7 +84,7 @@
 </div>
 
 <div id="quizScreen" class="lab-terminal" style="display:none;">
-    <div class="header"><h2 id="qCount">QUESTION NUMBER</h2><span id="timer" style="color:var(--bio-hazard); font-weight: bold;">720s</span></div>
+    <div class="header"><h2 id="qCount">TIME REMAINED</h2><span id="timer" style="color:var(--bio-hazard); font-weight: bold;">600s</span></div>
     <div style="height: 2px; background: #3a3a3c; margin-bottom: 20px;"><div id="progressFill" style="height:100%; width:0%; background:var(--clinic-blue); transition: 0.5s;"></div></div>
     <h3 id="questionText" style="font-weight: 400; font-size: 18px; line-height: 1.6;"></h3>
     <div id="optionsGrid"></div>
@@ -217,7 +217,7 @@ const quiz = [
         answer: 2
     }
 ];
-let index=0, score=0, selected=null, timer, timeLeft=720;
+let index=0, score=0, selected=null, timer, timeLeft=600;
 let studentName, studentReg;
 let studentAnswers = [];
 
@@ -323,4 +323,5 @@ function finishQuiz() {
 }
 </script>
 </body>
+
 </html>
